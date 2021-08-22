@@ -1,0 +1,147 @@
+*{
+  margin : 0px;
+  padding : 0px;
+}
+
+.outer-box {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  padding:4rem;
+  grid-gap: 3rem;
+}
+
+.inner-box {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+
+.content-img{
+  width:100%;
+}
+
+
+
+.productName{
+  font-size: 1.3rem;
+}
+
+.content-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    height: 5rem;
+}
+
+span.strikeOut {
+  text-decoration: line-through;
+  color: #8C908A;
+}
+
+.buyButton{
+  margin-bottom: 1rem;
+}
+
+.sale {
+  background-color: black;
+  color: white;
+  width: 3rem;
+  text-align: center;
+  position: absolute;
+  border-radius: 0.2rem;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+footer.bottomFooter {
+background-color: black;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 8rem;
+font-family: inherit;
+}
+
+
+.Title {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+  height: 15rem;
+}
+
+
+.titleText{
+  font-size: 1.2rem;
+  color: #8C908A;
+  font-weight: 500;
+}
+
+nav {
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 4rem;
+}
+
+.cartProduct {
+  position: absolute;
+  background-color: #ffffffeb;
+  width: 9rem;
+  padding: 1rem;
+  margin-left: -2rem;
+  border-radius: 0.3rem;
+}
+.cartItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+}
+
+@media (min-width:450px){
+  
+  .outer-box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+
+@media (min-width:767px){
+  
+  .outer-box {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
+
+
+
+@media (min-width:1200px){
+  
+  .outer-box {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .cardContent {
+    padding: 0rem 5rem;
+}
+
+}
